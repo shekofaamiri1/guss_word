@@ -18,3 +18,9 @@ while guess_count>0:
             if not'_' in guessed_list:
                 print('you won!')
                 break
+            else:  
+            guess_count-=1
+            print(f'wrong!=> remained guesses:{guess_count}')
+else:
+        print('please enter a valid char')
+        
