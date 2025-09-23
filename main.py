@@ -15,4 +15,6 @@ while guess_count>0:
                     guessed_list[idx]=gussed_char
             current_guess=' '.join(guessed_list)
             print(f'perfect=>{current_guess}')
-            
+            if not'_' in guessed_list:
+                print('you won!')
+                break
